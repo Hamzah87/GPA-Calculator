@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* GPA Calculator Container */
+.gpa-calculator {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust the width of the checkbox column to match the rest */
+th:first-child, td:first-child {
+    width: 40px; /* Allow the width to adjust naturally */
+    text-align: center; /* Center the checkbox horizontally */
+    vertical-align: middle; /* Center the checkbox vertically in the cell */
+}
+
+/* Keep the size of the checkbox */
+input[type="checkbox"] {
+    transform: scale(1.5);
+    width: 20px; /* Adjust the size if necessary */
+    height: 20px; /* Keep consistent height */
+    margin: 0; /* Remove margins */
+    position: relative; /* Ensure it doesn't move outside */
+}
+
+
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button#addRowBtn {
+    background-color: #007bff;
+    color: white;
+    width: 150px;
+}
+
+button#addRowBtn:hover {
+    background-color: #0056b3;
+}
+
+button#calculateGpa {
+    background-color: #28a745;
+    color: white;
+}
+
+button#calculateGpa:hover {
+    background-color: #218838;
+}
+
+button#resetForm {
+    background-color: #dc3545;
+    color: white;
+}
+
+button#resetForm:hover {
+    background-color: #c82333;
+}
+
+/* Style for the delete row (X) button */
+button.delete-row {
+    background-color: #dc3545; /* Change to red */
+    color: white; /* Make the text color white for visibility */
+    border: none; /* Remove any borders */
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional: Add some border radius for a smoother look */
+    cursor: pointer;
+}
+
+button.delete-row:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add space between the buttons */
+}
+
+/* Optional: Set a uniform width for both buttons */
+button#calculateGpa, button#resetForm {
+    width: 150px; /* Set this width for consistency (adjust as needed) */
+}
+
+
+/* GPA Result Styling */
+input#gpa {
+    font-weight: bold;
+    text-align: center;
+    width: 150px; /* Increase the width for better visibility */
+    font-size: 2em; /* Increase the font size */
+    margin-top: 20px;
+    padding: 15px; /* Add padding for a larger input box */
+    border: 3px solid #28a745; /* Make the border thicker and match the Calculate button */
+    border-radius: 10px; /* Make the corners rounded */
+    background-color: #f8f9fa; /* Slight background color to stand out */
+    color: #28a745; /* Make the GPA result green for better contrast */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
+}
+/* GPA Label Styling */
+label[for="gpa"] {
+    font-size: 1.5em; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-right: 10px; /* Add some space between the label and the input box */
+}
+
+/* Input Fields and Select Styling */
+input, select {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Specific Styling for Credits Input */
+input.credits {
+    width: 100px; /* Adjust the width to your preference */
+    padding: 8px; /* Optional: Adjust padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Aligns buttons horizontally in the center */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px;
+}
+
+/* Landing Page */
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.landing-page p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+.landing-page button {
+    padding: 15px 30px;
+    background-color: #1d6eb9;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.landing-page button:hover {
+    background-color: #218838;
+}
